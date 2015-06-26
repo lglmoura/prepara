@@ -28,7 +28,7 @@ gem 'foundation-rails'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'simple_form'
-gem 'therubyracer', :platform=>:ruby
+gem 'therubyracer', platform: :ruby
 gem 'thin'
 
 
