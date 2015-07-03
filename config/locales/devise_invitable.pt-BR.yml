@@ -1,0 +1,21 @@
+'pt-BR':
+  devise:
+    invitations:
+      send_instructions: 'An invitation email has been sent to %{email}.'
+      invitation_token_invalid: 'The invitation token provided is not valid!'
+      updated: 'Your password was set successfully. You are now signed in.'
+      no_invitations_remaining: "No invitations remaining"
+      invitation_removed: 'Your invitation was removed.'
+      new:
+        header: "Send invitation"
+        submit_button: "Send an invitation"
+      edit:
+        header: "Defina sua senha"
+        submit_button: "Salvar"
+    mailer:
+      invitation_instructions:
+        subject: '[InovaIF] Instruções de acesso'
+        hello: 'Olá %{email}'
+        someone_invited_you: 'Você foi cadastrado como usuário no sistema InovaIF para cadastro de projetos de pesquisa, desemvolvimento,inovação e intercâmbio. Clique no link abaixo para criar senha de acesso.'
+        accept: 'Aceitar'
+        ignore: "Sua conta não será criada até que você acesse o link acima e defina sua senha."

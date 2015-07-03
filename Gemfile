@@ -17,7 +17,7 @@ gem 'jbuilder'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
-  #gem 'spring'
+  
 end
 
 gem 'devise'
@@ -59,7 +59,8 @@ group :development do
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
-  #gem 'spring-commands-rspec'
+  gem 'rails_apps_pages'
+
 end
 
 group :development, :test do

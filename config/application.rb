@@ -23,7 +23,7 @@ module Prepara
     #    config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales',
     #  '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :"pt_BR"
+    config.i18n.default_locale = :"pt-BR"
 
     config.versao = `git describe --abbrev=0 --tags`.chomp rescue "0.0.0"
 
