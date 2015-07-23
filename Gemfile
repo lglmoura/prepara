@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 gem 'rails', '4.2.2'
 
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -13,12 +12,6 @@ gem 'jquery-inputmask-rails'
 
 gem 'turbolinks'
 gem 'jbuilder'
-
-group :development, :test do
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  
-end
 
 gem 'devise'
 gem 'devise-i18n'
@@ -31,11 +24,9 @@ gem 'simple_form'
 gem 'therubyracer', platform: :ruby
 gem 'thin'
 
-
 group :doc do
   gem 'sdoc', require: false
 end
-
 
 gem 'rb-readline'
 gem 'responders', '~> 2.0'
@@ -52,18 +43,12 @@ gem 'date_helper'
 gem 'money', '~> 6.5.0'
 gem 'ransack', '~> 1.5.1'
 
-
-
-group :development do
-  gem 'better_errors'
-  gem 'html2haml'
-  gem 'quiet_assets'
-  gem 'rails_layout'
-  gem 'rails_apps_pages'
-
-end
-
 group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+
+  gem 'sqlite3'
+
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'pry-rails'
@@ -74,7 +59,6 @@ group :development, :test do
   gem 'rspec-collection_matchers', '~> 1.1.2'
   gem 'rspec-activemodel-mocks', '~> 1.0.1'
   gem 'timecop'
-
 end
 
 group :test do
@@ -85,7 +69,18 @@ group :test do
   gem 'poltergeist', '~> 1.5.0'
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 group :development do
+  gem 'better_errors'
+  gem 'html2haml'
+  gem 'quiet_assets'
+  gem 'rails_layout'
+  gem 'rails_apps_pages'
+  gem "rails_apps_testing"
   gem 'brakeman'
   gem 'capistrano', '~> 3.0', require: false
   gem 'capistrano-rails', '~> 1.1', require: false
